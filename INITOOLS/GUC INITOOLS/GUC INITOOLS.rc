@@ -1,0 +1,538 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GUC INITOOLS.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GUC INITOOLS.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于SSD Develop Platform"
+FONT 10, "Microsoft Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SSD Develop Platform 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_GUCINITOOLS_DIALOG DIALOGEX 0, 0, 565, 400
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SSD Develop Platform"
+FONT 10, "Microsoft Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,3,25,558,368
+    COMBOBOX        IDC_COMBO1,3,5,307,282,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_CMD DIALOG  0, 0, 406, 282
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "Microsoft Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,8,8,224,251,ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL
+    PUSHBUTTON      "Enter VND",IDC_BUTTON1,255,21,50,14
+    COMBOBOX        IDC_COMBO1,291,209,95,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Out VND",IDC_BUTTON2,327,21,50,14
+    LTEXT           "InitialMode",IDC_STATIC,252,211,34,8
+    PUSHBUTTON      "Down SRAM ",IDC_BUTTON8,255,43,50,14
+    PUSHBUTTON      "Initial",IDC_BUTTON9,327,43,50,14
+    PUSHBUTTON      "Update FW ",IDC_BUTTON7,255,65,50,14
+    PUSHBUTTON      "Read FW",IDC_BUTTON11,327,65,50,14
+    PUSHBUTTON      "Update Loader",IDC_BUTTON12,255,87,50,14
+    PUSHBUTTON      "Refresh",IDC_BUTTON13,327,87,50,14
+    PUSHBUTTON      "Erase block",IDC_BUTTON14,255,109,50,14
+    LTEXT           "Channel",IDC_STATIC,252,157,37,10
+    EDITTEXT        IDC_EDIT2,291,155,42,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Die",IDC_STATIC,252,176,29,10
+    EDITTEXT        IDC_EDIT3,291,172,42,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Block",IDC_STATIC,252,191,32,12
+    EDITTEXT        IDC_EDIT5,291,190,42,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "",IDC_STATIC,245,141,149,88
+    GROUPBOX        "",IDC_STATIC,245,9,148,123
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,8,266,224,9
+END
+
+IDD_DIALOG_INFO DIALOG  0, 0, 421, 279
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "Microsoft Sans Serif"
+BEGIN
+    GROUPBOX        "Flash Info",IDC_STATIC11,9,79,400,69
+    EDITTEXT        IDC_EDITCHANNEL,289,93,54,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_BORDER
+    LTEXT           "Channel Num",IDC_STATIC14,195,93,55,8
+    LTEXT           "Flash Vendor",IDC_STATIC12,16,95,44,8
+    EDITTEXT        IDC_EDITPLANE,289,129,54,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_BORDER
+    LTEXT           "Plane Num Per Die",IDC_STATIC16,195,129,62,8
+    LTEXT           "Flash Type",IDC_STATIC13,16,113,40,8
+    LTEXT           "Die Num Per Channel",IDC_STATIC15,195,111,65,8
+    EDITTEXT        IDC_EDITCHANNEL2,289,111,54,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_BORDER
+    EDITTEXT        IDC_EDITCHANNEL3,109,94,54,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_BORDER
+    EDITTEXT        IDC_EDITCHANNEL4,109,112,54,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_BORDER
+    GROUPBOX        "",IDC_STATIC19,9,4,400,69
+    EDITTEXT        IDC_EDITCHANNEL5,289,16,54,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_BORDER
+    LTEXT           "Ultra DMA mode",IDC_STATIC20,195,16,55,8
+    LTEXT           "Firmware Verision",IDC_STATIC21,16,16,59,8
+    LTEXT           "Serial Number",IDC_STATIC24,16,34,61,8
+    LTEXT           "Ultra DMA mode supported",IDC_STATIC25,195,34,83,8
+    EDITTEXT        IDC_EDITCHANNEL6,289,34,54,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_BORDER
+    EDITTEXT        IDC_EDITCHANNEL7,108,16,54,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_BORDER
+    EDITTEXT        IDC_EDITCHANNEL8,108,34,54,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_BORDER
+    LTEXT           "SSD Capability  ",IDC_STATIC26,15,51,61,8
+    EDITTEXT        IDC_EDITCHANNEL9,108,51,54,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_BORDER
+    GROUPBOX        "Support Features",IDC_STATIC22,9,154,400,99
+    CONTROL         "SMART feature set",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,167,113,10
+    CONTROL         "PACKET Command feature set",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,196,167,113,10
+    CONTROL         "mandatory Power Management feature set",IDC_CHECK3,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,181,143,10
+    CONTROL         "Removable Media feature set ",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,196,181,113,10
+    CONTROL         "Security Mode feature set",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,195,113,10
+    CONTROL         "Advanced Power Management feature set",IDC_CHECK6,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,196,195,154,10
+    CONTROL         "48-bit Address feature set",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,210,113,10
+    CONTROL         "READ BUFFER",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,196,210,113,10
+    CONTROL         "WRITE BUFFER",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,222,113,10
+    CONTROL         "NOP",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,196,222,113,10
+    CONTROL         "CFA feature set",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,235,113,10
+    CONTROL         "DEVICE RESET",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,196,235,113,10
+END
+
+IDD_DIALOG_OPT DIALOGEX 0, 0, 538, 349
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "Microsoft Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "FW Setting",IDC_STATIC1,12,10,452,93
+    GROUPBOX        "Device Setting",IDC_STATIC6,12,107,254,81
+    CONTROL         "Enable Large Mode",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,23,74,10
+    EDITTEXT        IDC_EDITFLASH,316,22,49,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDITSTRIPE,316,39,49,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Reserve Ratio(1/128)",IDC_STATIC3,217,24,71,8
+    LTEXT           "Reserve Page Per 64 Page",IDC_STATIC4,217,42,88,8
+    EDITTEXT        IDC_EDITSN,171,153,82,12,ES_AUTOHSCROLL
+    LTEXT           "Firmware Verision",IDC_STATIC7,17,119,68,8
+    LTEXT           "Model Number(支持成盘后修改)",IDC_STATIC8,17,136,113,8
+    LTEXT           "Serial Number",IDC_STATIC9,17,153,55,8
+    EDITTEXT        IDC_EDITversion,171,119,82,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDITMODEL,171,136,82,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITCN,487,155,49,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE
+    LTEXT           "Function Control Word",IDC_STATIC5,274,148,95,8,NOT WS_VISIBLE
+    PUSHBUTTON      "Save",IDC_BUTTON1,472,11,54,14
+    PUSHBUTTON      "Cancel",IDC_BUTTON3,472,32,54,14
+    PUSHBUTTON      "Load",IDC_BUTTON4,472,53,54,14
+    PUSHBUTTON      "Save as",IDC_BUTTON5,472,74,54,14
+    PUSHBUTTON      "Read from SSD",IDC_BUTTON6,472,96,54,14
+    PUSHBUTTON      "Save to SSD",IDC_BUTTON7,472,118,54,14
+    GROUPBOX        "成盘后可修改选项",IDC_STATIC18,13,194,507,139
+    CONTROL         "Enable Access Control",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,55,90,10
+    LTEXT           "Protect Partition Size(单位:MByte)",IDC_STATIC23,22,297,141,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDITCN2,170,295,43,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDITSSD,309,256,49,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    LTEXT           "SSD Capability",IDC_STATIC2,170,253,98,8
+    CONTROL         "Enable Optional Capacity",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,252,98,8
+    LTEXT           "Mirror Partition Size(单位:MByte)",IDC_STATIC17,22,315,108,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDITMODEL2,170,315,43,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDITCN3,316,75,49,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Logic Block Include Phy Block",IDC_STATIC10,217,77,95,8
+    LTEXT           "Channel Num",IDC_STATIC14,17,172,55,8
+    COMBOBOX        IDC_COMBO2,172,170,82,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDITCN4,487,166,49,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_VISIBLE
+    LTEXT           "Max PU Num",IDC_STATIC27,274,159,59,8,NOT WS_VISIBLE
+    CONTROL         "Enable Two Plane ",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,39,100,10
+    EDITTEXT        IDC_EDITCN5,316,58,49,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "ECC Alarm Threshold",IDC_STATIC28,217,60,87,8
+    CONTROL         "Enable Write Protect",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | NOT WS_VISIBLE | WS_TABSTOP,22,232,98,8
+    COMBOBOX        IDC_COMBO3,454,178,82,48,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Interface Type",IDC_STATIC15,275,173,55,8,NOT WS_VISIBLE
+    CONTROL         "Enable Purge Online",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | NOT WS_VISIBLE | WS_TABSTOP,22,274,98,8
+    CONTROL         "Enable Vendor Trim",IDC_CHECK13,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | NOT WS_VISIBLE | WS_TABSTOP,309,212,98,8
+    CONTROL         "Enable Disk Restore",IDC_CHECK14,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | NOT WS_VISIBLE | WS_TABSTOP,22,211,98,8
+    CONTROL         "Enable Data Trap",IDC_CHECK15,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | NOT WS_VISIBLE | WS_TABSTOP,170,212,98,8
+    CONTROL         "Enable BIOS Binding",IDC_CHECK16,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | NOT WS_VISIBLE | WS_TABSTOP,170,233,98,8
+    EDITTEXT        IDC_EDITCN6,309,275,49,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE
+    LTEXT           "销毁触发时间（单位秒）",IDC_STATIC29,170,275,95,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDITCN7,359,295,43,12,ES_AUTOHSCROLL | ES_NUMBER | NOT WS_VISIBLE
+    LTEXT           "密码重试次数",IDC_STATIC30,260,297,95,8,NOT WS_VISIBLE
+    CONTROL         "Enable C2 Purge ",IDC_CHECK17,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | NOT WS_VISIBLE | WS_TABSTOP,309,233,83,8
+    CONTROL         "还原盘重启生效标志",IDC_CHECK18,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | NOT WS_VISIBLE | WS_TABSTOP,422,233,83,8
+END
+
+IDD_GC DIALOGEX 0, 0, 419, 326
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "Microsoft Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_MSFLEXGRID1,
+                    "{6262D3A0-531B-11CF-91F6-C2863C385E30}",WS_TABSTOP,7,11,398,289
+    PUSHBUTTON      "Refresh",IDC_BUTTON1,7,310,47,12
+END
+
+IDD_NV DIALOG  0, 0, 425, 293
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "Microsoft Sans Serif"
+BEGIN
+    CONTROL         "",IDC_MSFLEXGRID1,
+                    "{6262D3A0-531B-11CF-91F6-C2863C385E30}",WS_TABSTOP,10,8,394,209
+    EDITTEXT        IDC_EDIT1,71,231,45,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Time interval ",IDC_STATIC,13,231,47,12
+    PUSHBUTTON      "Start",IDC_BUTTON1,160,231,47,12
+    GROUPBOX        "",IDC_STATIC,10,221,275,25
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "GUC INITOOLS Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "GUC INITOOLS"
+            VALUE "LegalCopyright", "版权所有 (C) 2010"
+            VALUE "OriginalFilename", "GUC INITOOLS.EXE"
+            VALUE "ProductName", "GUC INITOOLS 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_GUCINITOOLS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 561
+        BOTTOMMARGIN, 393
+    END
+
+    IDD_DIALOG_CMD, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 403
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_DIALOG_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 417
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 275
+    END
+
+    IDD_DIALOG_OPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 536
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 343
+    END
+
+    IDD_GC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 415
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 322
+    END
+
+    IDD_NV, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 421
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 290
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_CMD DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 10, 0
+0x7246, 0x6d6f, 0x6620, 0x6c69, 0x0065, 
+    IDC_COMBO1, 0x403, 17, 0
+0x7246, 0x6d6f, 0x7520, 0x756e, 0x6573, 0x2064, 0x6863, 0x7069, "\000" 
+    IDC_COMBO1, 0x403, 24, 0
+0x7246, 0x6d6f, 0x7520, 0x6573, 0x2064, 0x6863, 0x7069, 0x7720, 0x7469, 
+0x2068, 0x5242, 0x0054, 
+    IDC_COMBO1, 0x403, 27, 0
+0x7246, 0x6d6f, 0x7520, 0x6573, 0x2064, 0x6863, 0x7069, 0x7720, 0x7469, 
+0x6f68, 0x7475, 0x4220, 0x5452, "\000" 
+    0
+END
+
+IDD_GC DLGINIT
+BEGIN
+    IDC_MSFLEXGRID1, 0x37a, 320, 0
+0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
+0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
+0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
+0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
+0x0033, 0x0030, 0x0029, 0x0000, 0x0001, 0x0000, 0x0021, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x0001, 0x8001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0002, 0x8001, 0x0001, 0x0000, 0x2100, 0x3443, 0x0812, 0x0000, 0x4500, 
+0x0052, 0xbd00, 0x003b, 0x4200, 0x6f6f, 0x0050, 0x0600, 0x8000, 0x0000, 
+0x2900, 0x0000, 0x0300, 0x0000, 0x0100, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0500, 0x0000, 0x0880, 0x0000, 0x0f80, 0x0000, 0x1280, 0x0000, 
+0x0d80, 0x0000, 0x0e80, 0x0000, 0x8080, 0x8080, 0xc000, 0xc0c0, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0100, 0x0000, 0x0100, 0x0000, 0x0000, 0x0000, 
+0x0100, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0100, 0x0000, 
+0x0100, 0x0200, 0x0300, 0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0100, 
+0x0000, 0x0100, 0x0000, 0x0000, 0x0000, 0x0000, 0x0300, 0xe352, 0x910b, 
+0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 0x0151, 0x0086, 0x9000, 0x7401, 
+0x01b7, 0x0400, 0xcecb, 0xe5cc, 0x5204, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x746c, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_NV DLGINIT
+BEGIN
+    IDC_MSFLEXGRID1, 0x37a, 297, 0
+0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
+0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
+0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
+0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
+0x0033, 0x0030, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x5171, 0x0000, 0x2b34, 
+0x0000, 0x6f42, 0x506f, 0x0000, 0x0006, 0x0080, 0x0000, 0x0016, 0x0000, 
+0x0003, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0005, 
+0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 0x000d, 0x8000, 
+0x000e, 0x8000, 0x8080, 0x0080, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 
+0x0002, 0x0000, 0x0000, 0x0003, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 0x0190, 0xb774, 0x0001, 0xcb04, 
+0xccce, 0x04e5, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 
+0x6c51, 0x0074, 0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_DIALOG_OPT DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO3, 0x403, 5, 0
+0x4153, 0x4154, "\000" 
+    IDC_COMBO3, 0x403, 4, 0
+0x5355, 0x0042, 
+    IDC_COMBO3, 0x403, 1, 0
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 SW80 Develop Platform(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DATAVIEW DIALOGEX 0, 0, 477, 287
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "Microsoft Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,9,3,315,274,ES_AUTOHSCROLL | ES_READONLY,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    PUSHBUTTON      "IDFY",IDC_BUTTON1,359,13,70,13
+    PUSHBUTTON      "Page Read bypass",IDC_BUTTON2,359,34,70,13
+    PUSHBUTTON      "Page Write",IDC_BUTTON8,359,75,70,13
+    PUSHBUTTON      "Read from file",IDC_BUTTON9,359,96,70,13
+    PUSHBUTTON      "Save to File",IDC_BUTTON10,359,117,70,13
+    PUSHBUTTON      "Forward",IDC_BUTTON11,359,138,70,13
+    PUSHBUTTON      "Back",IDC_BUTTON12,359,160,70,13
+    LTEXT           "Channel",IDC_STATIC,354,195,34,10
+    EDITTEXT        IDC_EDIT2,399,193,42,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Die",IDC_STATIC,354,211,34,10
+    EDITTEXT        IDC_EDIT3,399,209,42,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Block",IDC_STATIC,354,227,34,10
+    EDITTEXT        IDC_EDIT4,399,225,42,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Page",IDC_STATIC,354,245,34,10
+    EDITTEXT        IDC_EDIT5,399,243,42,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "OOB",IDC_STATIC,354,262,34,10
+    EDITTEXT        IDC_EDIT6,399,259,42,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "",IDC_STATIC,343,182,110,93
+    PUSHBUTTON      "Page Read",IDC_BUTTON13,359,55,70,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DATAVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 473
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 284
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\GUC INITOOLS.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

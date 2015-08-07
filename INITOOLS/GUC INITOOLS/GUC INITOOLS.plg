@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GUC INITOOLS - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7D.tmp" with contents
+[
+Setupapi.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/SW80 Develop Platform.pdb" /debug /machine:I386 /out:"Debug/SW80 Develop Platform.exe" /pdbtype:sept 
+".\Debug\DlgCmd.obj"
+".\Debug\DlgData.obj"
+".\Debug\DlgInfo.obj"
+".\Debug\DlgOpt.obj"
+".\Debug\font.obj"
+".\Debug\GCDlg.obj"
+".\Debug\Global.obj"
+".\Debug\GUC INITOOLS.obj"
+".\Debug\GUC INITOOLSDlg.obj"
+".\Debug\HexEdit.obj"
+".\Debug\msflexgrid.obj"
+".\Debug\NVDlg.obj"
+".\Debug\OPini.obj"
+".\Debug\picture.obj"
+".\Debug\rowcursor.obj"
+".\Debug\StdAfx.obj"
+".\Debug\SW80API.OBJ"
+".\Debug\TextProgressCtrl.obj"
+".\Debug\GUC INITOOLS.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7D.tmp"
+<h3>Output Window</h3>
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7E.tmp" with contents
+[
+/nologo /o"Debug/GUC INITOOLS.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\DlgCmd.sbr"
+".\Debug\DlgData.sbr"
+".\Debug\DlgInfo.sbr"
+".\Debug\DlgOpt.sbr"
+".\Debug\font.sbr"
+".\Debug\GCDlg.sbr"
+".\Debug\Global.sbr"
+".\Debug\GUC INITOOLS.sbr"
+".\Debug\GUC INITOOLSDlg.sbr"
+".\Debug\HexEdit.sbr"
+".\Debug\msflexgrid.sbr"
+".\Debug\NVDlg.sbr"
+".\Debug\OPini.sbr"
+".\Debug\picture.sbr"
+".\Debug\rowcursor.sbr"
+".\Debug\SW80API.SBR"
+".\Debug\TextProgressCtrl.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7E.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SW80 Develop Platform.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
