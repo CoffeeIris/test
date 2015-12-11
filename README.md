@@ -1,0 +1,2 @@
+# test
+This is the basic tool to initialize SW80 SSD produced by QUICKSTOR. A disk has to experience three status, which are GUCSSD, RAMDISK, and SSD, before it becomes a usable SSD. For a GUCSSD, it needs to run a Loader FW to transform into a RAMDISK. And for a RAMDDISK, it needs to run a RamDisk FW to transform into an SSD. If an SSD needs to return to the RAMDISK status, you should update the FW.
